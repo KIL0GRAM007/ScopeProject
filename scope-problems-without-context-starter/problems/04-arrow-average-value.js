@@ -21,5 +21,5 @@ const arrowAvgValue = array => {
 try {
   module.exports = arrowAvgValue;
 } catch (e) {
-  return undefined;
+  //return undefined;
 }
