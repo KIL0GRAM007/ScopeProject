@@ -10,11 +10,12 @@ arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 14
 arrowRestSum(0); // => 0
 ***********************************************************************/
 const arrowRestSum = (...par) => {
-      let sum = 0
 
+    let sum = par.reduce((accum, num) =>  accum += num)
+          return sum
 }
 
-
+arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 14
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
