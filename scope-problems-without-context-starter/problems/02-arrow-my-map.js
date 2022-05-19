@@ -17,7 +17,13 @@ let result2 = arrowMyMap(['run', 'Forrest'], yell);
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 ***********************************************************************/
-
+const arrowMyMap = (array, cb) => {
+    let resArr = []
+    array.forEach(ele => {
+          resArr.push(cb(ele))
+      })
+      return resArr
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -25,5 +31,5 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 try {
   module.exports = arrowMyMap;
 } catch (e) {
-  return null;
+ // return null;
 }
